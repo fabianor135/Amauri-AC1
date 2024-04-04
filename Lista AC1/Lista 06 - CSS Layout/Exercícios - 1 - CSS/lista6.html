@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layout Fixo</title>
+        <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #menu-superior {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center; /* Alinha o texto no centro */
+            border-bottom: 1px solid white;
+        }
+
+        #menu-lateral {
+            position: fixed;
+            top: 40px;
+            left: 0;
+            width: 200px;
+            height: calc(100% - 80px);
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        #conteudo {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        #rodape {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+    </head>
+    <body>
+        <div id="menu-superior">
+            <span style="display: inline-block;">Início &nbsp; &nbsp; &nbsp;
+                Sobre &nbsp; &nbsp; &nbsp; Contato</span>
+        </div>
+
+        <div id="menu-lateral">
+            <br>
+            <a>Menu 1</a><br><br>
+            <a>Menu 2</a><br><br>
+            <a>Menu 3</a><br>
+        </div>
+
+        <div id="conteudo">
+            <h2>Conteúdo</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                ac magna eget sem pulvinar malesuada. Integer in eros non justo
+                consequat venenatis. Vivamus non libero vel metus consectetur
+                gravida.</p>
+        </div>
+
+        <div id="rodape">
+            © 2023 Meu Site
+        </div>
+    </body>
+</html>
